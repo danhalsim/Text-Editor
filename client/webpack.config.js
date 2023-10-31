@@ -35,9 +35,9 @@ module.exports = () => {
         inject: true,
         name: 'Jate',
         short_name: 'Jate',
-        description: 'Jate',
-        background_color: '##1e2124',
-        theme_color: '##1e2124',
+        description: 'Text editor',
+        background_color: '#1e2124',
+        theme_color: '#1e2124',
         start_url: './',
         publicPath: './',
         icons: [
