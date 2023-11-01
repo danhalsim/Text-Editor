@@ -4,19 +4,9 @@
 
 ## Description
 
+This is a text editor that can be used online and offline. When the user enters text, the data is stored automatically and will persist. The user is able to download the application for offline use.
 
-
-The application has the following functions:
-
-- View departments
-- View roles
-- View employees
-- Add a department
-- Add a role
-- Add an employee
-- Update an employee's role
-
-Access the application here: https://www.youtube.com/watch?v=rKwUuS-pmno
+Access the application here: https://danhalsim-text-editor-08dc2f937961.herokuapp.com/
 
 A screenshot of the application running:
 
@@ -36,38 +26,22 @@ A screenshot of the application running:
 
 ## Installation
 
-Programs used:
-- VS Code and/or Git Bash
-
-Dependencies used:
-- dotenv
-- inquirer
-- mysql2
-
-Clone this repository. Install any programs you may need. Run `npm i` to install the dependencies.
+Open the application using the link above. Click on `install` to use the application offline.
 
 
 ## Usage
 
-
+Enter your notes into the text field.
 
 
 ## Credits
 
-- dotenv
-    - https://www.npmjs.com/package/dotenv
-- inquirer
-    - https://www.npmjs.com/package/inquirer
-- mysql2
-    - https://www.npmjs.com/package/mysql2
-- MDN Web Docs: throw
-    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw
-- UCI BCS for the application description.
+- UCI BCS for the starter code and the application description.
 - AskBCS for help with debugging.
 - Xpert Learning Assistant for help with:
-    - Creating a switch statement (index.js lines 21-48)
-    - Viewing data in mysql (index.js lines 77-85)
-    - Updating data in mysql (index.js lines 203-205)
+    - database.js (16-27, 30-42)
+    - install.js (18-30)
+    - src-sw.js (32-44)
 
 
 ## License

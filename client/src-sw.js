@@ -36,7 +36,7 @@ registerRoute(
     cacheName: 'asset-cache',
     plugins: [
       new CacheableResponsePlugin({
-        // // Specify the HTTP response statuses
+        // Specify the HTTP response statuses
         statuses: [0, 200],
       }),
     ]
