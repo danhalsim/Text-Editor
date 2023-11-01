@@ -24,9 +24,11 @@ warmStrategyCache({
   strategy: pageCache,
 });
 
+// Register a route for navigation requests
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 // TODO: Implement asset caching
+// Register a route for assets
 registerRoute(
   ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
 

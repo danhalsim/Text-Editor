@@ -4,8 +4,13 @@ const butInstall = document.getElementById('buttonInstall');
 // TODO: Add an event handler to the `beforeinstallprompt` event
 window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault()
+
+    // store the beforeinstallprompt event in the window.deferredPrompt property
+    // trigger the installation prompt later when the user clicks the install button
     window.deferredPrompt = event;
-    butInstall.classList.toggle('hidden',false);
+
+    // show the install button
+    butInstall.classList.toggle('hidden', false);
 });
 
 
@@ -16,8 +21,12 @@ butInstall.addEventListener('click', async () => {
         return;
     }
     event.prompt();
+
+    // clear the stored reference to the beforeinstallprompt event 
     window.deferredPrompt = null;
-    butInstall.classList.toggle('hidden',true);
+    
+    // hide the install button
+    butInstall.classList.toggle('hidden', true);
 });
 
 // TODO: Add an handler for the `appinstalled` event

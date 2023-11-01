@@ -50,14 +50,15 @@ module.exports = () => {
       }),
     ],
 
-    // Add CSS loaders and babel to webpack.
     module: {
       rules: [
         {
+          // css loaders
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         },
         {
+          // babel 
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
